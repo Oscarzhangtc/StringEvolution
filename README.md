@@ -1,5 +1,5 @@
 # String Evolution
-A simulation that imitates the biological evolutionary features of [Evolutionary Algorithms](https://en.wikipedia.org/wiki/Evolutionary_algorithm) to evolve a message(set of string) to the goal message of your choice.
+A simulation that imitates the biological evolutionary features of [Evolutionary Algorithms](https://en.wikipedia.org/wiki/Evolutionary_algorithm) to evolve a populations of messages(set of strings) to the goal message of your choice.
 
 # Intallation and Usage
 Packages DEAP and numpy are used in this simulation.

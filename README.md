@@ -32,7 +32,7 @@ In general, genetic algorithms follow these basic steps:
 5. Randomly mutate the genotypes of some individuals
 6. Repeat 3-5 for as many generations as required
 
-**Sample result:**
+##### Sample result:
 
 ```bash
 [Generation 0]

@@ -1,0 +1,8 @@
+Experimentation-the effect of population size on evolution
+Oscar Zhang 
+
+Population size has a huge effect on the speed of achieving the target text. Since each Messages is initialized randomly(assuming we don't assign a starting string) using the same function, we can imagine each Messages has a minuscule likehood of being equal to the target string initially. Hence  having a bigger population size means having more message and thus more likelihood of some of the Messages being randomized to the target from the beginning. Furthermore, more Messages means more mutations and crossovers will happen, increasing the speed of progression to target text. My intuition is that even though the text are mutated randomly, there's set of number of total possible mutations that can occurr. And few possible mutations of those will render the target text. Even thought the correct mutations is very small comparing the incredibly large of number of the possible of mutations having a large populations would increase how many of those possible mutations we try each generation, and ultimately the shortening the time of us getting to that right mutation that renders the target text. 
+
+On the contrary, a smaller populations means there are less Messages to attempt to get the goal add a slower speed, given a set number of generations. This was confirmed with an experiment of using a starting population of 1000 and of 10. The 1000 population got the goal around the 150th generation, while a population of 10 still have a distance of 15 from the goal even at the 500tg generation. In conclusion Population is indeed a key factor for evolution, as evidently larger will populations evolve faster and escapsulate more possible mutation/species.
+
+

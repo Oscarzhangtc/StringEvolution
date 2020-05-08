@@ -10,12 +10,15 @@ $ pip install numpy
 ```
 Make sure to install both before running. 
 
-Goal_message is an optional argument specfying the target text of the evolution. 
+Then run:
 
 ```bash
 $ python evolve_text.py [goal_message]
 ```
-Scroll down to see a sample results.
+
+Where goal_message is an optional argument specfying the target text of the evolution. 
+
+Scroll to see a sample result!
 
 
 # Overview

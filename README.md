@@ -8,7 +8,7 @@ Packages DEAP and numpy are used in this simulation.
 $ pip install deap
 $ pip install numpy
 ```
-Make sure to install both before running. 
+Make sure to install both before running.
 
 Then run:
 
@@ -16,7 +16,7 @@ Then run:
 $ python evolve_text.py [goal_message]
 ```
 
-Where goal_message is an optional argument specfying the target text of the evolution. 
+Where goal_message is an optional argument specfying the target text of the evolution.
 
 Scroll to see a sample result!
 
@@ -32,7 +32,7 @@ In general, genetic algorithms follow these basic steps:
 5. Randomly mutate the genotypes of some individuals
 6. Repeat 3-5 for as many generations as required
 
-**Sample result:** 
+**Sample result:**
 
 ```bash
 [Generation 0]
@@ -58,16 +58,16 @@ Message('THIS IS THE FINAL TARGET') [Distance: 0]
 ```
 
 
-**Step 1-2**
+**Step 1-2 Initialization**
 
-The genotype in our case would pieces of texts or sets of strings. To start(step 2), pieces of texts is randomly generate as the initial population of "genotypes". 
+The genotype in our case would pieces of texts or sets of strings. To start(step 2), pieces of texts is randomly generate as the initial population of "genotypes".
 
 
 **Step 3 Levenshtein distance**
 
-The distance value above as seen in sample result is an implementation of the [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance), which calculates the distance between the current message and the target text. The algorithm aims to minimize the distance, 
+The distance value above as seen in sample result is an implementation of the [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance), which calculates the distance between the current message and the target text. The algorithm aims to minimize the distance and serves as the fitness function, where genotypes with a large distance are eliminated and smaller distances are favored.
 
-This feature corresponds to the `levenshtein_distance()` function in `evolve_text.py`. 
+This feature corresponds to the `levenshtein_distance()` function in `evolve_text.py`.
 
 
 **Step 4 Mating**
@@ -81,10 +81,10 @@ Mating is behavior when pieces of the genotypes of two parent Messages combines/
   ("ABWXYF", "UVCDEZ")
 ```
 
-This crossover is intended to model homologous recombination of chromosomes that occurs during sexual reproduction. In this case, 2  strings are mated to produce offspring that inherits characters from its parents. 
+This crossover is intended to model homologous recombination of chromosomes that occurs during sexual reproduction. In this case, 2  strings are mated to produce offspring that inherits characters from its parents.
 
 This feature corresponds to the `two_point_crossover()` function in `evolve_text.py`.
- 
+
 
 **Step 5 Mutation**
 
@@ -94,5 +94,4 @@ Mutation modifies the genotype of a single individual, and is intended to model 
 2. Deletion of a single Message character
 3. Substitution of a single Message character for another random character
 
-This feature corresponds to the `mutate_text()` function in `evolve_text.py`. 
-
+This feature corresponds to the `mutate_text()` function in `evolve_text.py`.
